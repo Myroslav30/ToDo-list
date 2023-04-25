@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+
+.container-task {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-show-done-select {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containet-sort-by {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+    width: 80%;
+}
+
+.container-total-count {
+    margin-top: 2%;
+}
+
+button.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+button.add-btn:hover {
+    background-color: #3e8e41;
+}
+
+.new-task {
+    padding: 10px;
+    padding-left: 16px;
+    margin-right: 2%;
+    font-size: 26px;
+    border: none;
+    background: white;
+    border-radius: 40px;
+    width: 80%;
+}
+
+.delete-btn {
+    background-image: url('smi.svg');
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    padding-right: 85px;
+}
+
+button.delete-btn:hover {
+    background-color: #3e8e41;
+}
+
+.task-list {
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-list li {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.task-list li span {
+    font-size: 16px;
+}
+
+.task-list li label {
+    font-size: 30px;
+}
+
+input[type="checkbox"] {
+    transform: scale(3.0);
+    margin-left: 30px;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.sort-by {
+    width: 60%;
+}
+
+.todo-container {
+    width: 100%;
+}
+
+span {
+    font-size: 20px;
+}
+
+.total-count {
+    padding-right: 15px;
+}
+
+.completed-count {
+    padding-right: 15px;
+}
+
+.incomplete-count {}

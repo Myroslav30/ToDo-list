@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Список справ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Список справ</h1>
+    <div class="container-main">
+        <div class="row">
+            <div class="container-task">
+                <input type="text" class="new-task" placeholder="Додайте завдання...">
+                <button type="button" class="add-btn">+</button>
+            </div>
+            <div class="container-show-done-select">
+                <label for="show-done-select">Показати завдання:</label><br>
+                <select class="show-done-select">
+                    <option value="all">Всі</option>
+                    <option value="done">Виконані</option>
+                    <option value="not-done">Не виконані</option>
+                </select>
+            </div>
+            <div class="containet-sort-by">
+                <label for="sort-by">Сортувати за:</label><br>
+                <select class="sort-by">
+                    <option value="date-added">Дата додавання</option>
+                    <option value="text">Назвою</option>
+                </select>
+            </div>
+            <div class="container-total-count">
+                <span>Всього завдань:</span>
+                <span class="total-count"></span>
+                <span style="color: green;">&#9745;Виконані завдання:</span>
+                <span class="completed-count"></span>
+                <span style="color: red;"> &#9746;Не виконані завдання:</span>
+                <span class="incomplete-count"></span>
+            </div>
+        </div>
+    </div>
+    <div class="todo-container">
+        <ul class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
